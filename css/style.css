@@ -1,0 +1,252 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #111;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  color: currentColor;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* --------------------------- */
+/* ------- main styles ------- */
+
+.section-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.section-title-accent {
+  color: #fd9222;
+}
+
+/* ---------------------- */
+/* ------- header ------- */
+
+.header {
+}
+
+.header-nav {
+}
+
+.header-nav-logo {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+  color: #111;
+}
+
+.header-logo-accent {
+  font-style: italic;
+}
+
+.header-nav-list {
+}
+
+.header-nav-item {
+}
+
+.header-nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: #111;
+}
+
+.header-soc-list {
+}
+
+.header-soc-item {
+}
+
+.header-soc-link {
+}
+
+/* -------------------- */
+/* ------- hero ------- */
+
+.hero {
+  background-color: grey;
+}
+
+.hero-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+
+.hero-first-btn {
+}
+
+.hero-second-btn {
+}
+
+.hero-scroll-btn {
+}
+
+/* ------------------------ */
+/* ------- features ------- */
+
+.features {
+  background-color: #1e1823;
+}
+
+.features-title {
+}
+
+.features-list {
+}
+
+.features-list-item {
+}
+
+.features-list-title {
+}
+
+.features-list-txt {
+}
+
+/* --------------------- */
+/* ------- taste ------- */
+
+.taste {
+}
+
+.taste-title {
+}
+
+.taste-txt {
+}
+
+.taste-list {
+}
+
+.taste-list-item {
+}
+
+.taste-list-subtitle {
+}
+
+/* -------------------- */
+/* ------- made ------- */
+
+.made {
+}
+
+.made-title {
+}
+
+.made-subtitle {
+}
+
+.made-list {
+}
+
+.made-list-item {
+}
+
+.made-list-txt {
+}
+
+/* ----------------------- */
+/* ------- reviews ------- */
+
+.reviews {
+}
+
+.reviews-title {
+}
+
+.reviews-list {
+}
+
+.reviews-list-item {
+}
+
+.reviews-list-subtitle {
+}
+
+.reviews-list-txt {
+}
+
+/* ---------------------- */
+/* ------- footer ------- */
+
+.footer {
+}
+
+.footer-main-txt {
+}
+
+.footer-adress-title {
+}
+
+.footer-adress {
+}
+
+.footer-adress-list {
+}
+
+.footer-adress-item {
+}
+
+.footer-adress-link {
+}
+
+.footer-nav {
+}
+.footer-nav-list {
+}
+
+.footer-nav-item {
+}
+
+.footer-nav-link {
+}
+
+.footer-btn {
+}
+
+/* ---------------------- */
