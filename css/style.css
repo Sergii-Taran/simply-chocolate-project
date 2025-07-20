@@ -43,8 +43,8 @@ img {
   max-width: 100%;
 }
 
-/* --------------------------- */
-/* ------- main styles ------- */
+/* ----------------------------- */
+/* ------- common styles ------- */
 
 .section-title {
   font-weight: 600;
@@ -56,6 +56,19 @@ img {
 
 .section-title-accent {
   color: #fd9222;
+}
+
+.section-txt {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
 }
 
 /* ---------------------- */
@@ -86,10 +99,6 @@ img {
 }
 
 .header-nav-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: -0.02em;
   color: #111;
 }
 
@@ -143,9 +152,13 @@ img {
 }
 
 .features-list-title {
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
 }
 
 .features-list-txt {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 /* --------------------- */
@@ -167,6 +180,12 @@ img {
 }
 
 .taste-list-subtitle {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #111;
 }
 
 /* -------------------- */
@@ -179,6 +198,10 @@ img {
 }
 
 .made-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #111;
 }
 
 .made-list {
@@ -206,21 +229,42 @@ img {
 }
 
 .reviews-list-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  /* text-align: center; */
+  color: #111;
 }
 
 .reviews-list-txt {
+  color: rgba(17, 17, 17, 0.7);
 }
 
 /* ---------------------- */
 /* ------- footer ------- */
 
 .footer {
+  background-color: #1e1823;
 }
 
 .footer-main-txt {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.footer-txt-accent {
+  color: #fd9222;
 }
 
 .footer-adress-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  /* text-align: center; */
+  color: #fff;
 }
 
 .footer-adress {
@@ -233,6 +277,12 @@ img {
 }
 
 .footer-adress-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  /* text-align: center; */
+  color: #fff;
 }
 
 .footer-nav {
@@ -244,6 +294,7 @@ img {
 }
 
 .footer-nav-link {
+  color: #fff;
 }
 
 .footer-btn {
