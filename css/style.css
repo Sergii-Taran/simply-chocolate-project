@@ -1,6 +1,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   color: #111;
+  background-color: #fafafa;
 }
 
 h1,
@@ -79,6 +80,11 @@ img {
   letter-spacing: -0.02em;
 }
 
+.nav-list {
+  display: flex;
+  gap: 24px;
+}
+
 .nav-item {
 }
 
@@ -93,11 +99,21 @@ img {
 /* ------- header ------- */
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 32px;
+  /* padding-top: 24px;
+  padding-bottom: 32px; */
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
 }
 
 .header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-between;
+  margin-right: 90px;
 }
 
 .header-nav-logo {
@@ -106,6 +122,9 @@ img {
   line-height: 1.11;
   letter-spacing: -0.03em;
   color: #111;
+
+  display: flex;
+  align-items: center;
 }
 
 .header-logo-accent {
@@ -120,15 +139,24 @@ img {
 
 .header-nav-link {
   color: #111;
+
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 32px;
 }
 
 .header-soc-list {
+  display: flex;
+  gap: 18px;
 }
 
 .header-soc-item {
 }
 
 .header-soc-link {
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 32px;
 }
 
 /* -------------------- */
@@ -151,28 +179,50 @@ img {
   letter-spacing: -0.03em;
   color: #fff;
   margin-bottom: 32px;
+
+  max-width: 484px;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
 }
 
 .hero-first-btn {
   font-weight: 600;
   font-size: 14px;
   color: #fff;
+
+  border-radius: 100px;
+  padding: 14px 40px;
+
+  background-color: #fd9222;
+  border: none;
+
+  margin-right: 14px;
 }
 
 .hero-first-btn:hover,
 .hero-first-btn:focus {
   color: #fd9222;
+  background-color: #fcf1e0;
 }
 
 .hero-second-btn {
   font-weight: 600;
   font-size: 14px;
   color: #fff;
+  background-color: transparent;
+
+  border-radius: 100px;
+  padding: 14px 40px;
+  border: 1px solid #fff;
 }
 
 .hero-second-btn:hover,
 .hero-second-btn:focus {
   color: #fd9222;
+  border: 1px solid #fd9222;
 }
 
 .hero-scroll-btn {
@@ -181,6 +231,8 @@ img {
   line-height: 1.29;
   letter-spacing: -0.03em;
   color: #fff;
+
+  margin-left: auto;
 }
 
 .hero-scroll-btn:hover,
@@ -201,9 +253,15 @@ img {
 }
 
 .features-list {
+  display: flex;
+  gap: 88px;
+
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
 .features-list-item {
+  width: calc((100% - 2 * 88px) / 3);
 }
 
 .features-list-title {
@@ -239,9 +297,30 @@ img {
 }
 
 .taste-list {
+  display: flex;
+  gap: 19px;
 }
 
 .taste-list-item {
+  border: 1px solid #fd9222;
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 28px;
+  width: calc((100% - 3 * 19px) / 4);
+}
+
+.orange-item {
+  border: none;
+  background-color: #fd9222;
+}
+
+.black-item {
+  border: none;
+  background-color: #1e1823;
+}
+
+.taste-img {
+  margin-bottom: 36px;
 }
 
 .taste-list-subtitle {
@@ -251,6 +330,10 @@ img {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #111;
+}
+
+.white-subtitle {
+  color: #fff;
 }
 
 /* -------------------- */
@@ -267,6 +350,16 @@ img {
   margin-bottom: 50px;
 }
 
+.made-subcontainer {
+  display: flex;
+  gap: 20px;
+}
+
+.made-info {
+  padding: 32px;
+  background-color: #fff;
+}
+
 .made-subtitle {
   font-weight: 600;
   font-size: 18px;
@@ -277,6 +370,9 @@ img {
 }
 
 .made-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .made-list-item {
@@ -300,10 +396,20 @@ img {
 }
 
 .reviews-list {
+  display: flex;
+  gap: 28px;
+
   margin-bottom: 50px;
 }
 
 .reviews-list-item {
+  width: calc((100% - 2 * 28px) / 3);
+  padding: 24px;
+  background-color: #fff;
+}
+
+.reviews-img {
+  margin-bottom: 18px;
 }
 
 .reviews-list-subtitle {
@@ -324,6 +430,13 @@ img {
   font-weight: 600;
   font-size: 18px;
   color: #111;
+
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+  padding: 14px 40px;
+
+  background-color: transparent;
+
   display: block;
   margin: 0 auto;
 }
@@ -331,6 +444,7 @@ img {
 .reviews-btn:hover,
 .reviews-btn:focus {
   color: #fff;
+  background-color: #fd9222;
 }
 
 /* ---------------------- */
@@ -342,6 +456,13 @@ img {
   padding-bottom: 50px;
 }
 
+.footer-first-subcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 78px;
+}
+
 .footer-main-txt {
   font-weight: 500;
   font-size: 28px;
@@ -349,6 +470,9 @@ img {
   letter-spacing: -0.02em;
   color: #fff;
   max-width: 300px;
+}
+
+.footer-contacts {
 }
 
 .footer-adress-title {
@@ -378,8 +502,15 @@ img {
   color: #fff;
 }
 
+.footer-second-subcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .footer-nav {
 }
+
 .footer-nav-list {
 }
 
@@ -394,11 +525,20 @@ img {
   font-weight: 600;
   font-size: 14px;
   color: #fff;
+  background-color: #fd9222;
+  border: none;
+
+  border-radius: 100px;
+  padding: 14px 32px;
+
+  /* display: block;
+  margin: 0 auto; */
 }
 
 .footer-btn:hover,
 .footer-btn:focus {
   color: #fd9222;
+  background-color: #fcf1e0;
 }
 
 /* ---------------------- */
