@@ -159,6 +159,11 @@ img {
   padding-bottom: 32px;
 }
 
+.header-soc-icon:hover {
+  fill: #fd9222;
+  stroke: #fd9222;
+}
+
 /* -------------------- */
 /* ------- hero ------- */
 
@@ -167,15 +172,15 @@ img {
 }
 
 .hero-container {
-  background-color: #fcf1e0;
+  background-color: gray;
   padding: 380px 40px 40px;
   border-radius: 30px;
 
-  /* linear-gradient(
-      rgba(17, 17, 17, 0.4),
-      rgba(17, 17, 17, 0.4)
-    ), */
-  background-image: url(../images/hero-bg.jpg);
+  background-image: linear-gradient(
+      rgba(17, 17, 17, 0.2),
+      rgba(17, 17, 17, 0.2)
+    ),
+    url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -209,6 +214,8 @@ img {
   border: none;
 
   margin-right: 14px;
+
+  transition: color 250ms ease, background-color 250ms ease;
 }
 
 .hero-first-btn:hover,
@@ -226,6 +233,8 @@ img {
   border-radius: 100px;
   padding: 14px 40px;
   border: 1px solid #fff;
+
+  transition: color 250ms ease, background-color 250ms ease;
 }
 
 .hero-second-btn:hover,
@@ -242,6 +251,8 @@ img {
   color: #fff;
 
   margin-left: auto;
+
+  transition: color 250ms ease;
 }
 
 .hero-scroll-btn:hover,
@@ -281,7 +292,22 @@ img {
   right: -44px;
   width: 1px;
   height: 80%;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.features-icon-wrapper {
+  width: 62px;
+  height: 62px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+}
+
+.features-icon {
+  fill: #fd9222;
 }
 
 .features-list-title {
@@ -469,6 +495,8 @@ img {
 
   display: block;
   margin: 0 auto;
+
+  transition: color 250ms ease, background-color 250ms ease;
 }
 
 .reviews-btn:hover,
@@ -575,6 +603,7 @@ img {
 
   /* display: block;
   margin: 0 auto; */
+  transition: color 250ms ease, background-color 250ms ease;
 }
 
 .footer-btn:hover,
