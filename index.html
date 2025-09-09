@@ -330,13 +330,15 @@
               </p>
             </li>
             <li class="reviews-list-item">
-              <img
-                class="reviews-img"
-                src="./images/review-img2.jpg"
-                width="80"
-                height="80"
-                alt="Nazar Babenko"
-              />
+              <div class="avatar-container">
+                <img
+                  class="reviews-img"
+                  src="./images/review-img2.jpg"
+                  width="80"
+                  height="80"
+                  alt="Nazar Babenko"
+                />
+              </div>
               <h3 class="reviews-list-subtitle">Nazar Babenko</h3>
               <p class="reviews-list-txt section-txt">
                 This chocolate confection is a delight! A delight! The wafer is
@@ -367,7 +369,7 @@
 
     <footer class="footer">
       <div class="container">
-        <div class="footer-first-subcontainer">
+        <div class="footer-top">
           <p class="footer-main-txt">
             <span class="title-accent">Chocolate</span> a delicious cure for a
             bad day
@@ -394,7 +396,7 @@
           </div>
         </div>
 
-        <div class="footer-second-subcontainer">
+        <div class="footer-bottom">
           <nav class="footer-nav">
             <ul class="footer-nav-list nav-list">
               <li class="footer-nav-item nav-item">
@@ -411,12 +413,22 @@
             </ul>
           </nav>
 
-          <button class="footer-btn" type="button">Subscribe</button>
+          <form class="footer-form">
+            <label for="footer-email" aria-label="Footer input"></label>
+            <input
+              type="email"
+              name="footer-email"
+              id="footer-email"
+              class="footer-input"
+              placeholder="Enter your email"
+            />
+            <button type="submit" class="footer-btn">Subscribe</button>
+          </form>
         </div>
       </div>
     </footer>
 
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-close-btn">
           <svg class="modal-close-icon" width="28" height="28">
