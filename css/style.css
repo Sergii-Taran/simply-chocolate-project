@@ -55,9 +55,9 @@ img {
 /* ------- common styles ------- */
 
 .container {
-  width: 1166px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
 }
 
@@ -97,6 +97,22 @@ img {
 .nav-link:hover,
 .nav-link:focus {
   color: #fd9222;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1166px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 /* ---------------------- */
@@ -307,34 +323,32 @@ img {
 
 .features {
   background-color: #1e1823;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .features-list {
   display: flex;
-  gap: 88px;
-  padding-left: 18px;
-  padding-right: 18px;
-  /* justify-content: space-between;
-  align-items: flex-start; */
+  flex-wrap: wrap;
+
+  gap: 20px;
 }
 
 .features-list-item {
-  width: calc((100% - 2 * 88px) / 3);
   position: relative;
+  padding-right: 28px;
 }
 
-.features-list-item:not(:last-child)::after {
+/* .features-list-item:not(:last-child)::after {
   content: "";
   position: absolute;
   top: 50%;
   right: -18px;
   transform: translateY(-50%);
   width: 1px;
-  height: 120px;
+  height: 124px;
   background-color: rgba(255, 255, 255, 0.3);
-}
+} */
 
 .features-icon-wrapper {
   width: 62px;
@@ -358,8 +372,45 @@ img {
   margin-bottom: 18px;
 }
 
-.features-list-txt {
+.features-list-text {
   color: rgba(255, 255, 255, 0.7);
+}
+
+@media screen and (min-width: 768px) {
+  .features {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .features-list {
+    gap: 32px;
+  }
+
+  .features-list-item {
+    width: calc((100% - 32px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-list {
+    gap: 88px;
+  }
+
+  .features-list-item {
+    width: calc((100% - 2 * 88px) / 3);
+    padding-right: 0;
+  }
+
+  .features-list-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 124px;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 /* --------------------- */
