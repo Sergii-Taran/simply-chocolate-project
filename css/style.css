@@ -35,6 +35,7 @@ button {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -63,8 +64,8 @@ img {
 
 .section-title {
   font-weight: 600;
-  font-size: 24px;
-  line-height: 1.17;
+  font-size: 20px;
+  line-height: 1.2;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
@@ -78,6 +79,7 @@ img {
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
+  text-align: center;
 }
 
 .nav-list {
@@ -105,6 +107,17 @@ img {
     padding-left: 32px;
     padding-right: 32px;
   }
+
+  .made .container {
+    width: 678px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    line-height: 1.17;
+    text-transform: uppercase;
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -112,6 +125,10 @@ img {
     width: 1166px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .made .container {
+    width: 1166px;
   }
 }
 
@@ -171,6 +188,12 @@ img {
 .header-soc-icon:hover {
   fill: #fd9222;
   stroke: #fd9222;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
 }
 
 /* -------------------- */
@@ -318,6 +341,12 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
+}
+
 /* ------------------------ */
 /* ------- features ------- */
 
@@ -338,17 +367,6 @@ img {
   position: relative;
   padding-right: 28px;
 }
-
-/* .features-list-item:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: -18px;
-  transform: translateY(-50%);
-  width: 1px;
-  height: 124px;
-  background-color: rgba(255, 255, 255, 0.3);
-} */
 
 .features-icon-wrapper {
   width: 62px;
@@ -374,6 +392,7 @@ img {
 
 .features-list-text {
   color: rgba(255, 255, 255, 0.7);
+  text-align: left;
 }
 
 @media screen and (min-width: 768px) {
@@ -394,6 +413,8 @@ img {
 @media screen and (min-width: 1200px) {
   .features-list {
     gap: 88px;
+    padding-left: 18px;
+    padding-right: 18px;
   }
 
   .features-list-item {
@@ -417,26 +438,26 @@ img {
 /* ------- taste ------- */
 
 .taste {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 
 .taste-title {
-  max-width: 411px;
+  max-width: 283px;
   margin: 0 auto;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 }
 
-.taste-txt {
+.taste-text {
   text-align: center;
-  max-width: 486px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 32px;
 }
 
 .taste-list {
   display: flex;
-  gap: 19px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .taste-list-item {
@@ -444,7 +465,7 @@ img {
   border-radius: 15px;
   background-color: #fff;
   padding: 28px;
-  width: calc((100% - 3 * 19px) / 4);
+  width: 100%;
 
   position: relative;
   overflow: hidden;
@@ -461,6 +482,7 @@ img {
 }
 
 .taste-img {
+  margin: 0 auto;
   margin-bottom: 36px;
 }
 
@@ -498,7 +520,7 @@ img {
 }
 
 .taste-list-item:hover {
-  border: none;
+  border-color: transparent;
 }
 
 .overlay-title {
@@ -519,7 +541,7 @@ img {
   margin-bottom: 14px;
 }
 
-.overlay-primery-btn {
+.overlay-primary-btn {
   font-weight: 400;
   font-size: 10px;
   line-height: 1.2;
@@ -534,8 +556,8 @@ img {
   transition: color 250ms ease, background-color 250ms ease;
 }
 
-.overlay-primery-btn:hover,
-.overlay-primery-btn:focus {
+.overlay-primary-btn:hover,
+.overlay-primary-btn:focus {
   color: #fd9222;
   background-color: #fcf1e0;
 }
@@ -577,22 +599,63 @@ img {
   -webkit-line-clamp: 7;
 }
 
+@media screen and (min-width: 768px) {
+  .taste {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+  .taste-title {
+    max-width: 411px;
+    margin-bottom: 28px;
+  }
+
+  .taste-text {
+    max-width: 486px;
+    margin-bottom: 50px;
+  }
+
+  .taste-list {
+    gap: 32px;
+  }
+
+  .taste-list-item {
+    width: calc((100% - 32px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .taste {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  .taste-list {
+    gap: 19px;
+  }
+
+  .taste-list-item {
+    width: calc((100% - 3 * 19px) / 4);
+  }
+}
+
 /* -------------------- */
 /* ------- made ------- */
 
 .made {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .made-title {
   max-width: 205px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 .made-subcontainer {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   align-items: stretch;
 }
@@ -605,12 +668,12 @@ img {
 .made-thumb img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
 }
 
 .made-info {
-  padding: 32px;
+  padding: 20px 14px;
   background-color: #fff;
   border-radius: 15px;
 }
@@ -620,15 +683,16 @@ img {
   font-size: 18px;
   line-height: 1.33;
   color: #111;
-  max-width: 350px;
-  margin-bottom: 28px;
+
+  margin-bottom: 20px;
 }
 
 .made-list {
 }
 
 .made-list-item {
-  margin-bottom: 24px;
+  margin-bottom: 18px;
+
   position: relative;
   padding-left: 16px;
 }
@@ -647,10 +711,54 @@ img {
   background-color: #4c4c4c;
   border-radius: 50%;
   border: 1px solid #eceded;
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
 }
 
-.made-list-txt {
+.made-list-text {
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .made {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .made-title {
+    margin-bottom: 50px;
+  }
+
+  .made-info {
+    padding: 32px;
+  }
+
+  .made-subtitle {
+    max-width: 350px;
+    margin-bottom: 28px;
+  }
+
+  .made-list {
+    padding-right: 70px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .made {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .made-subcontainer {
+    flex-wrap: nowrap;
+  }
+
+  .made-list {
+    padding-right: 27px;
+  }
+
+  .made-list-item {
+    margin-bottom: 24px;
+  }
 }
 
 /* ----------------------- */
@@ -733,6 +841,12 @@ img {
 .reviews-btn:focus {
   color: #fff;
   background-color: #fd9222;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
 }
 
 /* ---------------------- */
@@ -861,6 +975,12 @@ img {
 .footer-btn:focus {
   color: #fd9222;
   background-color: #fcf1e0;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
 }
 
 /* ------------------------ */
@@ -1070,4 +1190,10 @@ img {
 .modal-btn:focus {
   color: #fd9222;
   background-color: #fcf1e0;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
 }
