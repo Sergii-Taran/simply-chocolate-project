@@ -200,38 +200,51 @@ img {
 /* ------- hero ------- */
 
 .hero {
-  padding-bottom: 72px;
+  padding-bottom: 60px;
 }
 
 .hero-container {
   background-color: gray;
-  padding: 380px 40px 40px;
+  padding: 395px 20px 20px;
+
   border-radius: 30px;
 
   background-image: linear-gradient(
       rgba(17, 17, 17, 0.3),
       rgba(17, 17, 17, 0.3)
     ),
-    url(../images/hero-bg.jpg);
+    url(../images/hero-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+  .hero-container {
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.3),
+        rgba(17, 17, 17, 0.3)
+      ),
+      url(../images/hero-bg-mob-2x.jpg);
+  }
+}
+
 .hero-title {
   font-weight: 500;
-  font-size: 28px;
-  line-height: 1.21;
+  font-size: 20px;
+  line-height: 1.2;
+
   letter-spacing: -0.03em;
   color: #fff;
   margin-bottom: 32px;
-
-  max-width: 484px;
 }
 
 .hero-buttons {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .hero-first-btn {
@@ -240,12 +253,10 @@ img {
   color: #fff;
 
   border-radius: 100px;
-  padding: 14px 40px;
+  padding: 12px 28px;
 
   background-color: #fd9222;
   border: none;
-
-  margin-right: 14px;
 
   transition: color 250ms ease, background-color 250ms ease;
 }
@@ -262,9 +273,11 @@ img {
   color: #fff;
   background-color: transparent;
 
-  border-radius: 100px;
-  padding: 14px 40px;
   border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 12px 28px;
+
+  margin-left: auto;
 
   transition: color 250ms ease, background-color 250ms ease;
 }
@@ -282,7 +295,7 @@ img {
   letter-spacing: -0.03em;
   color: #fff;
 
-  margin-left: auto;
+  margin-top: 32px;
 
   display: flex;
   align-items: center;
@@ -296,7 +309,7 @@ img {
   height: 38px;
   background-color: #fafafa;
   border-radius: 50%;
-  border: no;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -342,9 +355,80 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .hero {
+    padding-bottom: 40px;
+  }
+
+  .hero-container {
+    padding: 670px 40px 40px;
+
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.3),
+        rgba(17, 17, 17, 0.3)
+      ),
+      url(../images/hero-bg-tab.jpg);
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .hero-container {
+      background-image: linear-gradient(
+          rgba(17, 17, 17, 0.3),
+          rgba(17, 17, 17, 0.3)
+        ),
+        url(../images/hero-bg-tab-2x.jpg);
+    }
+  }
+
+  .hero-title {
+    font-size: 28px;
+    line-height: 1.21;
+
+    max-width: 484px;
+  }
+
+  .hero-first-btn {
+    padding: 14px 40px;
+  }
+
+  .hero-second-btn {
+    padding: 14px 40px;
+    margin-left: 14px;
+  }
+
+  .hero-scroll-btn {
+    margin-top: 0;
+    margin-left: auto;
+  }
 }
 
 @media screen and (min-width: 1200px) {
+  .hero {
+    padding-bottom: 72px;
+  }
+
+  .hero-container {
+    padding: 380px 40px 40px;
+
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.3),
+        rgba(17, 17, 17, 0.3)
+      ),
+      url(../images/hero-bg.jpg);
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .hero-container {
+      background-image: linear-gradient(
+          rgba(17, 17, 17, 0.3),
+          rgba(17, 17, 17, 0.3)
+        ),
+        url(../images/hero-bg-2x.jpg);
+    }
+  }
 }
 
 /* ------------------------ */
@@ -750,6 +834,13 @@ img {
 
   .made-subcontainer {
     flex-wrap: nowrap;
+  }
+
+  .made-thumb {
+    flex: 0 0 auto;
+  }
+  .made-thumb img {
+    max-width: 100%;
   }
 
   .made-list {

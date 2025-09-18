@@ -79,7 +79,7 @@
     </header> -->
 
     <main>
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">
             Treat yourself or a loved one to our finest ingredients for a moment
@@ -97,7 +97,7 @@
             ></a>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <section class="features features-container">
         <div class="container">
@@ -166,6 +166,10 @@
             <li class="taste-list-item orange-item">
               <img
                 class="taste-img"
+                srcset="
+                  ./images/milk-chocolate.png    1x,
+                  ./images/milk-chocolate-2x.png 2x
+                "
                 src="./images/milk-chocolate.png"
                 width="206"
                 height="160"
@@ -190,6 +194,7 @@
             <li class="taste-list-item">
               <img
                 class="taste-img"
+                srcset="./images/milk.png 1x, ./images/milk-2x.png 2x"
                 src="./images/milk.png"
                 width="206"
                 height="160"
@@ -215,6 +220,7 @@
             <li class="taste-list-item black-item">
               <img
                 class="taste-img"
+                srcset="./images/nuts.png 1x, ./images/nuts-2x.png 2x"
                 src="./images/nuts.png"
                 width="206"
                 height="160"
@@ -240,7 +246,11 @@
             <li class="taste-list-item">
               <img
                 class="taste-img"
-                src="./images/semi-sweet-chokolate.png"
+                srcset="
+                  ./images/ss-chokolate.png    1x,
+                  ./images/ss-chokolate-2x.png 2x
+                "
+                src="./images/ss-chokolate.png"
                 width="206"
                 height="160"
                 alt="Semi-Sweet Chokolate"
@@ -273,11 +283,31 @@
           </h2>
           <div class="made-subcontainer">
             <div class="made-thumb">
-              <img
-                src="./images/made-img.jpg"
-                width="600"
-                alt="Made Choсolate"
-              />
+              <picture>
+                <source
+                  srcset="./images/made-img.jpg 1x, ./images/made-img-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/made-img-tab.jpg    1x,
+                    ./images/made-img-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/made-img-mob.jpg    1x,
+                    ./images/made-img-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/made-img.jpg"
+                  width="600"
+                  alt="Made Choсolate"
+                />
+              </picture>
             </div>
             <div class="made-info">
               <h3 class="made-subtitle">
@@ -330,6 +360,10 @@
             <li class="reviews-list-item">
               <img
                 class="reviews-img"
+                srcset="
+                  ./images/review-img1.jpg    1x,
+                  ./images/review-img1-2x.jpg 2x
+                "
                 src="./images/review-img1.jpg"
                 width="80"
                 height="80"
@@ -345,6 +379,10 @@
               <div class="avatar-container">
                 <img
                   class="reviews-img"
+                  srcset="
+                    ./images/review-img2.jpg    1x,
+                    ./images/review-img2-2x.jpg 2x
+                  "
                   src="./images/review-img2.jpg"
                   width="80"
                   height="80"
@@ -361,6 +399,10 @@
             <li class="reviews-list-item">
               <img
                 class="reviews-img"
+                srcset="
+                  ./images/review-img3.jpg    1x,
+                  ./images/review-img3-2x.jpg 2x
+                "
                 src="./images/review-img3.jpg"
                 width="80"
                 height="80"
