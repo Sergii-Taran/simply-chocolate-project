@@ -871,8 +871,8 @@ img {
   margin-bottom: 32px;
 }
 
-.reviev-hide1,
-.reviev-hide2 {
+.review-hide1,
+.review-hide2 {
   display: none;
 }
 
@@ -954,7 +954,7 @@ img {
     margin-bottom: 94px;
   }
 
-  .reviev-hide1 {
+  .review-hide1 {
     display: block;
   }
 
@@ -980,7 +980,7 @@ img {
     margin-bottom: 50px;
   }
 
-  .reviev-hide2 {
+  .review-hide2 {
     display: block;
   }
 
@@ -1189,7 +1189,7 @@ img {
   transition: opacity 250ms ease-in-out;
 }
 
-.is-open {
+.backdrop.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -1197,20 +1197,20 @@ img {
 
 .modal {
   border-radius: 15px;
-  width: 518px;
-  min-height: 794px;
+  width: 312px;
+  min-height: 620px;
   background: #fafafa;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 40px;
+  padding: 32px 24px;
 }
 
 .modal-close-btn {
   position: absolute;
-  top: 24px;
-  right: 24px;
+  top: 14px;
+  right: 14px;
 
   background: none;
   border: none;
@@ -1232,13 +1232,14 @@ img {
 }
 
 .modal-title {
+  font-size: 18px;
   text-align: left;
-  max-width: 298px;
-  margin-bottom: 40px;
+  max-width: 255px;
+  margin-bottom: 32px;
 }
 
 .modal-field {
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
 .modal-label {
@@ -1247,17 +1248,18 @@ img {
   color: rgba(64, 64, 64, 0.3);
 
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .modal-input {
   width: 100%;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
-  border-radius: 13px;
-  height: 68px;
+  border-radius: 8px;
+  height: 45px;
+
   background-color: transparent;
-  padding-left: 62px;
-  padding-right: 24px;
+  padding-left: 44px;
+  padding-right: 16px;
 
   font-size: 18px;
   line-height: 1.29;
@@ -1289,7 +1291,8 @@ img {
   fill: transparent;
   stroke: #404040;
   position: absolute;
-  left: 24px;
+  left: 18px;
+
   top: 50%;
   transform: translateY(-50%);
 }
@@ -1297,10 +1300,10 @@ img {
 .modal-comment {
   width: 100%;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
-  border-radius: 13px;
-  height: 137px;
+  border-radius: 8px;
+  height: 92px;
   background-color: transparent;
-  padding: 22px 24px;
+  padding: 14px 18px;
 
   font-size: 18px;
   line-height: 1.29;
@@ -1317,49 +1320,57 @@ img {
 }
 
 .modal-comment::placeholder {
-  font-size: 18px;
+  font-size: 14px;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
 }
 
-.checkbox-field {
-  margin-bottom: 40px;
+.check-field {
+  margin-bottom: 32px;
 }
 
 .modal-check-text {
-  font-size: 14px;
+  font-size: 12px;
+  line-height: 1.33333;
   letter-spacing: -0.02em;
-  color: rgba(64, 64, 64, 0.6);
+  color: #8e8f99;
   display: flex;
-  text-align: center;
-  gap: 8px;
+  align-items: flex-start;
 }
 
-.modal-check-text span {
+.modal-checkbox {
   width: 20px;
   height: 20px;
   border-radius: 6px;
   border: 1px solid rgba(17, 17, 17, 0.14);
-  display: flex;
+  margin-right: 12px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+
   fill: transparent;
 }
 
-.modal-check:checked + .modal-check-text span {
+.modal-check:checked + .modal-check-text .modal-checkbox {
   background-color: #fd9222;
   border: none;
   fill: #fff;
 }
 
-.privacy-link {
+.modal-link {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #fd9222;
 }
 
-.privacy-link:hover,
-.privacy-link:focus {
+.modal-link:hover,
+.modal-link:focus {
   color: #d06600;
 }
 
@@ -1371,7 +1382,7 @@ img {
   border: none;
 
   border-radius: 100px;
-  padding: 14px 40px;
+  padding: 12px 28px;
 
   transition: color 250ms ease, background-color 250ms ease;
 }
@@ -1383,7 +1394,62 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-}
+  .modal {
+    width: 518px;
+    min-height: 794px;
+    padding: 40px;
+  }
 
-@media screen and (min-width: 1200px) {
+  .modal-close-btn {
+    top: 24px;
+    right: 24px;
+  }
+
+  .modal-title {
+    font-size: 24px;
+    max-width: 298px;
+    margin-bottom: 40px;
+  }
+
+  .modal-field {
+    margin-bottom: 18px;
+  }
+
+  .modal-label {
+    margin-bottom: 8px;
+  }
+
+  .modal-input {
+    border-radius: 14px;
+    height: 68px;
+    padding-left: 62px;
+    padding-right: 24px;
+  }
+
+  .modal-icon {
+    left: 24px;
+  }
+
+  .modal-comment {
+    border-radius: 14px;
+    height: 138px;
+    padding: 22px 24px;
+  }
+
+  .modal-comment::placeholder {
+    font-size: 18px;
+  }
+
+  .check-field {
+    margin-bottom: 40px;
+  }
+
+  .modal-check-text {
+    font-size: 14px;
+    align-items: center;
+  }
+
+  .modal-btn {
+    padding: 14px 40px;
+  }
 }
